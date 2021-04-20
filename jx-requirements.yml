@@ -24,7 +24,7 @@ spec:
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: ""
+      email: "lindelani.nthangeni@gmail.com"
       enabled: false
       production: false
   repository: bucketrepo
