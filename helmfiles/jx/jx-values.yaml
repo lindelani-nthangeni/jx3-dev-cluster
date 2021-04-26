@@ -32,17 +32,21 @@ jxRequirements:
     provider: minikube
   environments:
   - key: dev
+    owner: lindelani-nthangeni
+    repository: jx3-dev-cluster
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: 192.168.99.100.nip.io
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: ""
+      email: lindelani.nthangeni@gmail.com
       enabled: false
       production: false
+  pipelineUser:
+    username: lindelani-nthangeni
   repository: bucketrepo
   secretStorage: local
   vault: {}

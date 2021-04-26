@@ -14,8 +14,11 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.106.49.197
   environments:
   - key: dev
+    owner: lindelani-nthangeni
+    repository: jx3-dev-cluster
   - key: staging
   - key: production
   ingress:
@@ -24,9 +27,11 @@ spec:
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: "lindelani.nthangeni@gmail.com"
+      email: lindelani.nthangeni@gmail.com
       enabled: false
       production: false
+  pipelineUser:
+    username: lindelani-nthangeni
   repository: bucketrepo
   secretStorage: local
   vault: {}
