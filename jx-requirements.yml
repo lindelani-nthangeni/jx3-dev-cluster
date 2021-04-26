@@ -24,8 +24,8 @@ spec:
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: "lindelani.nthangeni@gmail.com"
-      enabled: false
+      email: lindelani.nthangeni@gmail.com
+      enabled: true
       production: false
   repository: bucketrepo
   secretStorage: local
