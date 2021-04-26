@@ -44,7 +44,7 @@ jxRequirements:
     namespaceSubDomain: -jx.
     tls:
       email: lindelani.nthangeni@gmail.com
-      enabled: true
+      enabled: false
       production: false
   pipelineUser:
     username: lindelani-nthangeni
@@ -55,7 +55,7 @@ jxRequirements:
 jxRequirementsIngressExternalDNS:
   enabled: false
 jxRequirementsIngressTLS:
-  enabled: true
+  enabled: false
 jxRequirementsKuberhealthy:
   enabled: false
 jxRequirementsTLSCheck:

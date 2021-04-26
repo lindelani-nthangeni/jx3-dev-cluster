@@ -17,7 +17,3 @@ spec:
               servicePort: 80
             path: "/hook"
       host: bd9db3ca6a35.ngrok.io
-  tls:
-    - hosts:
-        - bd9db3ca6a35.ngrok.io
-      secretName: "tls-192-168-99-100-nip-io-s"
