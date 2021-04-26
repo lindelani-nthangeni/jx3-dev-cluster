@@ -28,7 +28,7 @@ spec:
     namespaceSubDomain: -jx.
     tls:
       email: lindelani.nthangeni@gmail.com
-      enabled: true
+      enabled: false
       production: false
   pipelineUser:
     username: lindelani-nthangeni
