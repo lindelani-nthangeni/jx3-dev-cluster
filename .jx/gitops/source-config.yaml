@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: hello-world
     - name: python-demo2
     - name: python-http
     scheduler: in-repo
