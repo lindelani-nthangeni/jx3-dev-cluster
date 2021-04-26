@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: lindelani-nthangeni
+    provider: github
+    repository: python-http
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: lindelani-nthangeni-python-http
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/lindelani-nthangeni/python-http.git
+  org: lindelani-nthangeni
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: python-http
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/lindelani-nthangeni/python-http

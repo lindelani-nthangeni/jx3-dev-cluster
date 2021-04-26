@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: lindelani-nthangeni
+    provider: github
+    repository: python-demo2
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: lindelani-nthangeni-python-demo2
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/lindelani-nthangeni/python-demo2.git
+  org: lindelani-nthangeni
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: python-demo2
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/lindelani-nthangeni/python-demo2
