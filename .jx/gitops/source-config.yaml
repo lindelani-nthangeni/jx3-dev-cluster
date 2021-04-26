@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: python-demo2
+    - name: python-http
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
