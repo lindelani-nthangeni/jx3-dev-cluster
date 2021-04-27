@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        lindelani-nthangeni/hello-world: true
         lindelani-nthangeni/jx3-dev-cluster: true
         lindelani-nthangeni/python-demo2: true
         lindelani-nthangeni/python-http: true
@@ -21,6 +22,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        lindelani-nthangeni/hello-world: merge
         lindelani-nthangeni/jx3-dev-cluster: merge
         lindelani-nthangeni/python-demo2: merge
         lindelani-nthangeni/python-http: merge
@@ -35,6 +37,7 @@ data:
         - needs-rebase
         repos:
         - lindelani-nthangeni/jx3-dev-cluster
+        - lindelani-nthangeni/hello-world
         - lindelani-nthangeni/python-demo2
         - lindelani-nthangeni/python-http
       - labels:
@@ -47,6 +50,7 @@ data:
         - needs-rebase
         repos:
         - lindelani-nthangeni/jx3-dev-cluster
+        - lindelani-nthangeni/hello-world
         - lindelani-nthangeni/python-demo2
         - lindelani-nthangeni/python-http
       target_url: http://dashboard-jx.192.168.99.100.nip.io
