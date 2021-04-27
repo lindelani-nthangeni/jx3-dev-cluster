@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: lindelani-nthangeni
+    provider: github
+    repository: hello-world
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: lindelani-nthangeni-hello-world
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/lindelani-nthangeni/hello-world.git
+  org: lindelani-nthangeni
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: hello-world
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/lindelani-nthangeni/hello-world

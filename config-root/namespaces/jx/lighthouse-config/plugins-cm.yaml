@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - lindelani-nthangeni/hello-world
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - lindelani-nthangeni/python-demo2
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -24,6 +28,9 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      lindelani-nthangeni/hello-world:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       lindelani-nthangeni/jx3-dev-cluster:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -38,6 +45,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      lindelani-nthangeni/hello-world:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       lindelani-nthangeni/jx3-dev-cluster:
       - config-updater
       - approve
@@ -98,6 +121,9 @@ data:
     triggers:
     - repos:
       - lindelani-nthangeni/jx3-dev-cluster
+      trusted_org: todo
+    - repos:
+      - lindelani-nthangeni/hello-world
       trusted_org: todo
     - repos:
       - lindelani-nthangeni/python-demo2
